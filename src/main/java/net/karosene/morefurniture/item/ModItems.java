@@ -19,7 +19,6 @@ public class ModItems {
     }
 
     private static Item registerItem(String name, Item item) {
-        //return Registry.register(Registries.ITEM, new Identifier(MoreFurniture.MOD_ID, name), item);
         return Registry.register(Registries.ITEM, Identifier.of(MoreFurniture.MOD_ID, name), item);
     }
 
