@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "morefurniture:dildo_block"
+    }
+  ],
+  "result": {
+    "id": "morefurniture:big_dildo",
+    "count": 9
+  }
+}

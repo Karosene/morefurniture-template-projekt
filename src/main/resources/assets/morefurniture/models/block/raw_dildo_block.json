@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "morefurniture:block/ruby_block"
+    "all": "morefurniture:block/raw_dildo_block"
   }
 }

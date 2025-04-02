@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "morefurniture:big_dildo"
+    }
+  },
+  "result": {
+    "id": "morefurniture:dildo_block"
+  }
+}

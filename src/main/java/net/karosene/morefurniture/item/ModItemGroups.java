@@ -13,16 +13,14 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(MoreFurniture.MOD_ID, "ruby"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
+            Identifier.of(MoreFurniture.MOD_ID, "dildo"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dildo"))
                     .icon(() -> new ItemStack(ModItems.DILDO)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DILDO);
                         entries.add(ModItems.BIG_DILDO);
 
-                        entries.add(ModBlocks.RUBY_BLOCK);
-                        entries.add(ModBlocks.RAW_RUBY_BLOCK);
-
-
+                        entries.add(ModBlocks.DILDO_BLOCK);
+                        entries.add(ModBlocks.RAW_DILDO_BLOCK);
                     }).build());
 
 
