@@ -12,10 +12,12 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item DILDO = registerItem("dildo", new Item(new Item.Settings()));
     public static final Item BIG_DILDO = registerItem("big_dildo", new Item(new Item.Settings()));
+    public static final Item BLACK_DILDO = registerItem("black_dildo", new Item(new Item.Settings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(DILDO);
         entries.add(BIG_DILDO);
+        entries.add(BLACK_DILDO);
     }
 
     private static Item registerItem(String name, Item item) {
