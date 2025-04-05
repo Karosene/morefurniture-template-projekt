@@ -12,17 +12,25 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup DILDO_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(MoreFurniture.MOD_ID, "dildo"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dildo"))
+            FabricItemGroup.builder().displayName(Text.translatable("Dildo"))
                     .icon(() -> new ItemStack(ModItems.DILDO)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DILDO);
                         entries.add(ModItems.BIG_DILDO);
+                        entries.add(ModItems.BLACK_DILDO);
 
                         entries.add(ModBlocks.DILDO_BLOCK);
                         entries.add(ModBlocks.RAW_DILDO_BLOCK);
                     }).build());
 
+    public static final ItemGroup SEQUOIA_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MoreFurniture.MOD_ID, "sequoia"),
+            FabricItemGroup.builder().displayName(Text.translatable("Sequoia"))
+                    .icon(() -> new ItemStack(ModBlocks.SEQUOIA_LOG)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SEQUOIA_LOG);
+                        entries.add(ModBlocks.SEQUOIA_WOOD);
+                    }).build());
 
     public static void registerItemGroups() {
         MoreFurniture.LOGGER.info("Registering Item Groups for " + MoreFurniture.MOD_ID);
