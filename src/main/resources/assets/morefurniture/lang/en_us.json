@@ -2,11 +2,13 @@
   "item.morefurniture.dildo": "Dildo",
   "item.morefurniture.black_dildo": "Black Dildo",
   "item.morefurniture.big_dildo": "Big Dildo",
-
   "block.morefurniture.dildo_block": "Dildo Block",
   "block.morefurniture.raw_dildo_block": "Raw Dildo Block",
+
   "block.morefurniture.sequoia_log": "Sequoia Log",
   "block.morefurniture.sequoia_wood": "Sequoia Wood",
+  "block.morefurniture.sequoia_planks": "Sequoia Planks",
 
-  "morefurniture.dildo": "Dildo Tutorial Group"
+  "morefurniture.dildo": "Dildo Group",
+  "morefurniture.sequoia": "Sequoia Group"
 }

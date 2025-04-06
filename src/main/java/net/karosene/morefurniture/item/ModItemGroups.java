@@ -30,6 +30,9 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.SEQUOIA_LOG)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SEQUOIA_LOG);
                         entries.add(ModBlocks.SEQUOIA_WOOD);
+                        entries.add(ModBlocks.STRIPPED_SEQUOIA_LOG);
+                        entries.add(ModBlocks.STRIPPED_SEQUOIA_WOOD);
+                        entries.add(ModBlocks.SEQUOIA_PLANKS);
                     }).build());
 
     public static void registerItemGroups() {

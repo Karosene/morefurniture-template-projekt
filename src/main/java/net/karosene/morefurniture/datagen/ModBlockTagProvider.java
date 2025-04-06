@@ -16,8 +16,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.SEQUOIA_LOG);
-        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlocks.SEQUOIA_WOOD);
+                .add(ModBlocks.SEQUOIA_PLANKS)
+                .add(ModBlocks.SEQUOIA_WOOD)
+                .add(ModBlocks.STRIPPED_SEQUOIA_LOG)
+                .add(ModBlocks.STRIPPED_SEQUOIA_WOOD);
     }
 }

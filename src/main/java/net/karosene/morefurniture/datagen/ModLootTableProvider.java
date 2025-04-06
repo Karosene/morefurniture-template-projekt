@@ -14,8 +14,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        //sequoia woods
         addDrop(ModBlocks.SEQUOIA_LOG);
         addDrop(ModBlocks.SEQUOIA_WOOD);
+        addDrop(ModBlocks.STRIPPED_SEQUOIA_LOG);
+        addDrop(ModBlocks.STRIPPED_SEQUOIA_WOOD);
+        addDrop(ModBlocks.SEQUOIA_PLANKS);
+
+        //dildo items
         addDrop(ModBlocks.DILDO_BLOCK);
         addDrop(ModBlocks.RAW_DILDO_BLOCK);
     }
