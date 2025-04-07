@@ -18,9 +18,20 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool dildoPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DILDO_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_DILDO_BLOCK);
 
+        BlockStateModelGenerator.BlockTexturePool sequoiaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SEQUOIA_PLANKS);
         blockStateModelGenerator.registerLog(ModBlocks.SEQUOIA_LOG).log(ModBlocks.SEQUOIA_LOG).wood(ModBlocks.SEQUOIA_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SEQUOIA_LOG).log(ModBlocks.STRIPPED_SEQUOIA_LOG).wood(ModBlocks.STRIPPED_SEQUOIA_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SEQUOIA_PLANKS);
+
+        sequoiaPool.stairs(ModBlocks.SEQUOIA_STAIRS);
+        sequoiaPool.slab(ModBlocks.SEQUOIA_SLAB);
+        sequoiaPool.button(ModBlocks.SEQUOIA_BUTTON);
+        sequoiaPool.pressurePlate(ModBlocks.SEQUOIA_PRESSURE_PLATE);
+        sequoiaPool.fence(ModBlocks.SEQUOIA_FENCE);
+        sequoiaPool.fenceGate(ModBlocks.SEQUOIA_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.SEQUOIA_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.SEQUOIA_TRAPDOOR);
     }
 
     @Override

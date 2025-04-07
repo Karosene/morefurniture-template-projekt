@@ -2,9 +2,7 @@ package net.karosene.morefurniture.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.karosene.morefurniture.MoreFurniture;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -27,9 +25,27 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f)));
     public static final Block STRIPPED_SEQUOIA_WOOD = registerBlock("stripped_sequoia_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
-
     public static final Block SEQUOIA_PLANKS = registerBlock("sequoia_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+
+    public static final Block SEQUOIA_STAIRS = registerBlock("sequoia_stairs",
+            new StairsBlock(ModBlocks.SEQUOIA_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+    public static final Block SEQUOIA_SLAB = registerBlock("sequoia_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB).strength(4f)));
+
+    public static final Block SEQUOIA_BUTTON = registerBlock("sequoia_button",
+            new ButtonBlock(BlockSetType.OAK, 10, FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)));
+    public static final Block SEQUOIA_PRESSURE_PLATE = registerBlock("sequoia_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)));
+
+    public static final Block SEQUOIA_FENCE = registerBlock("sequoia_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+    public static final Block SEQUOIA_FENCE_GATE = registerBlock("sequoia_fence_gate",
+            new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)));
+    public static final Block SEQUOIA_DOOR = registerBlock("sequoia_door",
+            new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
+    public static final Block SEQUOIA_TRAPDOOR = registerBlock("sequoia_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

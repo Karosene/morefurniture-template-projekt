@@ -33,6 +33,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_SEQUOIA_LOG);
                         entries.add(ModBlocks.STRIPPED_SEQUOIA_WOOD);
                         entries.add(ModBlocks.SEQUOIA_PLANKS);
+
+                        entries.add(ModBlocks.SEQUOIA_STAIRS);
+                        entries.add(ModBlocks.SEQUOIA_SLAB);
+                        entries.add(ModBlocks.SEQUOIA_BUTTON);
+                        entries.add(ModBlocks.SEQUOIA_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SEQUOIA_FENCE);
+                        entries.add(ModBlocks.SEQUOIA_FENCE_GATE);
+                        entries.add(ModBlocks.SEQUOIA_TRAPDOOR);
+                        entries.add(ModBlocks.SEQUOIA_DOOR);
                     }).build());
 
     public static void registerItemGroups() {
