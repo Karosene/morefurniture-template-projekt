@@ -1,5 +1,6 @@
 package net.karosene.morefurniture.datagen;
 
+import com.jcraft.jorbis.Block;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.karosene.morefurniture.block.ModBlocks;
@@ -20,5 +21,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SEQUOIA_WOOD)
                 .add(ModBlocks.STRIPPED_SEQUOIA_LOG)
                 .add(ModBlocks.STRIPPED_SEQUOIA_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.SEQUOIA_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.SEQUOIA_FENCE_GATE);
+
     }
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "morefurniture:block/sequoia_door_bottom",
+    "top": "morefurniture:block/sequoia_door_top"
+  }
+}

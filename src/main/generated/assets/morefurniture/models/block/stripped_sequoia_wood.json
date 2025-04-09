@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "morefurniture:block/stripped_sequoia_log",
+    "side": "morefurniture:block/stripped_sequoia_log"
+  }
+}

@@ -39,7 +39,7 @@ public class ModBlocks {
             new PressurePlateBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)));
 
     public static final Block SEQUOIA_FENCE = registerBlock("sequoia_fence",
-            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block SEQUOIA_FENCE_GATE = registerBlock("sequoia_fence_gate",
             new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)));
     public static final Block SEQUOIA_DOOR = registerBlock("sequoia_door",
