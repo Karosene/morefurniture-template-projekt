@@ -32,5 +32,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //dildo items
         addDrop(ModBlocks.DILDO_BLOCK);
         addDrop(ModBlocks.RAW_DILDO_BLOCK);
+
+        addDrop(ModBlocks.SEQUOIA_LEAVES, leavesDrops(ModBlocks.SEQUOIA_LEAVES, ModBlocks.SEQUOIA_PLANKS, 0.25f));
     }
 }

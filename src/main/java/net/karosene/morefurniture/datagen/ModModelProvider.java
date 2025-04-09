@@ -21,6 +21,9 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool sequoiaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SEQUOIA_PLANKS);
         blockStateModelGenerator.registerLog(ModBlocks.SEQUOIA_LOG).log(ModBlocks.SEQUOIA_LOG).wood(ModBlocks.SEQUOIA_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_SEQUOIA_LOG).log(ModBlocks.STRIPPED_SEQUOIA_LOG).wood(ModBlocks.STRIPPED_SEQUOIA_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SEQUOIA_PLANKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SEQUOIA_LEAVES );
+
 
         sequoiaPool.stairs(ModBlocks.SEQUOIA_STAIRS);
         sequoiaPool.slab(ModBlocks.SEQUOIA_SLAB);

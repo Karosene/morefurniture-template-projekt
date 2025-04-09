@@ -4,7 +4,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "morefurniture:sequoia_logs"
+      "item": "morefurniture:sequoia_log"
     }
   ],
   "result": {
