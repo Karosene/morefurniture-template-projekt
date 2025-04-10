@@ -42,6 +42,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SEQUOIA_FENCE_GATE);
                         entries.add(ModBlocks.SEQUOIA_TRAPDOOR);
                         entries.add(ModBlocks.SEQUOIA_DOOR);
+                        entries.add(ModBlocks.VERTICAL_SEQUOIA_SLAB);
 
                         entries.add(ModBlocks.SEQUOIA_LEAVES);
                     }).build());

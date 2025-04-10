@@ -11,6 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    //dildo
     public static final Block DILDO_BLOCK = registerBlock("dildo_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block RAW_DILDO_BLOCK = registerBlock("raw_dildo_block",
@@ -48,6 +49,35 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block SEQUOIA_TRAPDOOR = registerBlock("sequoia_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()));
+
+    //vertical slaby
+    public static final Block VERTICAL_SEQUOIA_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.OAK_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_OAK_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.OAK_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_SPRUCE_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.SPRUCE_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_BIRCH_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.BIRCH_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_JUNGLE_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.JUNGLE_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_ACACIA_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.ACACIA_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_DARK_OAK_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.DARK_OAK_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_MANGROVE_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.MANGROVE_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_CHERRY_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.CHERRY_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_BAMBOO_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.BAMBOO_SLAB).sounds(BlockSoundGroup.BAMBOO_WOOD).hardness(2f));
+    public static final Block VERTICAL_BAMBOO_MOSAIC_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.BAMBOO_MOSAIC_SLAB).sounds(BlockSoundGroup.BAMBOO_WOOD).hardness(2f));
+    public static final Block VERTICAL_CRIMSON_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.CRIMSON_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+    public static final Block VERTICAL_WARPED_SLAB = new VerticalSlabBlock(AbstractBlock.
+            Settings.copy(Blocks.WARPED_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

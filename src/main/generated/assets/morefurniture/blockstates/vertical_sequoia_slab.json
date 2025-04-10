@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north,type=half": { "model": "morefurniture:block/vertical_sequoia_slab", "uvlock": true },
+    "facing=east,type=half": { "model": "morefurniture:block/vertical_sequoia_slab", "y": 90, "uvlock": true },
+    "facing=south,type=half": { "model": "morefurniture:block/vertical_sequoia_slab", "y": 180, "uvlock": true },
+    "facing=west,type=half": { "model": "morefurniture:block/vertical_sequoia_slab", "y": 270, "uvlock": true },
+    "type=double": { "model": "morefurniture:block/sequoia_planks" }
+  }
+}
