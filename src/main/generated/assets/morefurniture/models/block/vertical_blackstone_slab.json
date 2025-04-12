@@ -1,0 +1,7 @@
+{
+  "parent": "morefurniture:block/vertical_slab_collumn",
+  "textures": {
+    "end": "minecraft:block/blackstone_top",
+    "side": "minecraft:block/blackstone"
+  }
+}
