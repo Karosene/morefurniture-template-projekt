@@ -2,7 +2,9 @@ package net.karosene.morefurniture;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.karosene.morefurniture.block.ModBlocks;
 import net.karosene.morefurniture.item.ModItemGroups;
 import net.karosene.morefurniture.item.ModItems;
@@ -81,6 +83,16 @@ public class MoreFurniture implements ModInitializer {
 		registerBlockItem("vertical_waxed_exposed_cut_copper_slab", VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
 		registerBlockItem("vertical_waxed_weathered_cut_copper_slab", VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
 		registerBlockItem("vertical_waxed_oxidized_cut_copper_slab", VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
+
+		StrippableBlockRegistry.register(ModBlocks.SEQUOIA_LOG, ModBlocks.STRIPPED_SEQUOIA_LOG);
+		StrippableBlockRegistry.register(ModBlocks.SEQUOIA_WOOD, ModBlocks.STRIPPED_SEQUOIA_WOOD);
+
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SEQUOIA_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SEQUOIA_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SEQUOIA_LOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_SEQUOIA_WOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SEQUOIA_PLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SEQUOIA_LEAVES, 30, 60);
 
 		ModItemGroups.registerItemGroups();
 

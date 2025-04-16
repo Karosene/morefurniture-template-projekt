@@ -2,6 +2,7 @@ package net.karosene.morefurniture.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.karosene.morefurniture.MoreFurniture;
+import net.karosene.morefurniture.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,17 +20,20 @@ public class ModBlocks {
 
     //sekvoje
     public static final Block SEQUOIA_LOG = registerBlock("sequoia_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)));
     public static final Block SEQUOIA_WOOD = registerBlock("sequoia_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_SEQUOIA_LOG = registerBlock("stripped_sequoia_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_SEQUOIA_WOOD = registerBlock("stripped_sequoia_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+
     public static final Block SEQUOIA_PLANKS = registerBlock("sequoia_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
     public static final Block SEQUOIA_LEAVES = registerBlock("sequoia_leaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque()));
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    public static final Block SEQUOIA_SAPLING = registerBlock("sequoia_sapling",
+            new SaplingBlock(ModSaplingGenerators.SEQUOIA, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
     public static final Block SEQUOIA_STAIRS = registerBlock("sequoia_stairs",
             new StairsBlock(ModBlocks.SEQUOIA_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
@@ -47,6 +51,7 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque()));
     public static final Block SEQUOIA_TRAPDOOR = registerBlock("sequoia_trapdoor",
             new TrapdoorBlock(BlockSetType.OAK, FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque()));
+
 
     //vertical slaby
     public static final Block VERTICAL_SEQUOIA_SLAB = new VerticalSlabBlock(AbstractBlock.
@@ -76,6 +81,18 @@ public class ModBlocks {
     public static final Block VERTICAL_WARPED_SLAB = new VerticalSlabBlock(AbstractBlock.
             Settings.copy(Blocks.WARPED_SLAB).sounds(BlockSoundGroup.WOOD).hardness(2f));
 
+    //copper slabs
+    public static final Block VERTICAL_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_EXPOSED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.EXPOSED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_WEATHERED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WEATHERED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_OXIDIZED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.OXIDIZED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+
+    public static final Block VERTICAL_WAXED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+    public static final Block VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
+
+    //others
     public static final Block VERTICAL_STONE_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB).sounds(BlockSoundGroup.STONE).hardness(2f).requiresTool());
     public static final Block VERTICAL_SMOOTH_STONE_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE_SLAB).sounds(BlockSoundGroup.STONE).hardness(2f).requiresTool());
     public static final Block VERTICAL_SANDSTONE_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SANDSTONE_SLAB).sounds(BlockSoundGroup.STONE).hardness(2f).requiresTool());
@@ -112,15 +129,6 @@ public class ModBlocks {
     public static final Block VERTICAL_DEEPSLATE_BRICK_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICK_SLAB).sounds(BlockSoundGroup.STONE).hardness(2f).requiresTool());
     public static final Block VERTICAL_DEEPSLATE_TILE_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILE_SLAB).sounds(BlockSoundGroup.STONE).hardness(2f).requiresTool());
     public static final Block VERTICAL_MUD_BRICK_SLAB = new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.MUD_BRICK_SLAB).sounds(BlockSoundGroup.MUD_BRICKS).hardness(2f).requiresTool());
-
-    public static final Block VERTICAL_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_EXPOSED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.EXPOSED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_WEATHERED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WEATHERED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_OXIDIZED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.OXIDIZED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_WAXED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
-    public static final Block VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB = new CopperVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB).sounds(BlockSoundGroup.METAL).hardness(2f).requiresTool());
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

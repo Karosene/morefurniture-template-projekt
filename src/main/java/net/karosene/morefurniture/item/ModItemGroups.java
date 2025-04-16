@@ -45,6 +45,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VERTICAL_SEQUOIA_SLAB);
 
                         entries.add(ModBlocks.SEQUOIA_LEAVES);
+                        entries.add(ModBlocks.SEQUOIA_SAPLING);
                     }).build());
 
     public static final ItemGroup VERTICAL_SLABS_GROUP = Registry.register(Registries.ITEM_GROUP,

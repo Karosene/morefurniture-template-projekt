@@ -24,6 +24,5 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.SEQUOIA_FENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.SEQUOIA_FENCE_GATE);
-
     }
 }
