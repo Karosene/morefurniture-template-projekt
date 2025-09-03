@@ -22,7 +22,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.SEQUOIA_LOG),
                 new StraightTrunkPlacer(5, 6, 3),
 
-                BlockStateProvider.of(ModBlocks.SEQUOIA_LEAVES),
+                 BlockStateProvider.of(ModBlocks.SEQUOIA_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());

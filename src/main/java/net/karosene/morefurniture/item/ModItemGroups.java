@@ -20,7 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BIG_DILDO);
                         entries.add(ModItems.BLACK_DILDO);
 
-                        entries.add(ModBlocks.DILDO_BLOCK);
+                        entries.add(ModBlocks.TEST_BLOCK);
                         entries.add(ModBlocks.RAW_DILDO_BLOCK);
                     }).build());
 

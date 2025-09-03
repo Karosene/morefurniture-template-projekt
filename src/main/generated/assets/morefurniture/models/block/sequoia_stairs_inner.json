@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "morefurniture:block/sequoia_planks",
-    "side": "morefurniture:block/sequoia_planks",
-    "top": "morefurniture:block/sequoia_planks"
-  }
-}
